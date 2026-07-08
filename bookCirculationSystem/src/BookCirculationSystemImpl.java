@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Objects;
 
 public class BookCirculationSystemImpl implements BookCirculationSystem {
-    private LinkedList<Book> books = new LinkedList<>();
+    private final LinkedList<Book> books = new LinkedList<>();
 
     @Override
     public Boolean isEmpty() {
@@ -41,7 +41,9 @@ public class BookCirculationSystemImpl implements BookCirculationSystem {
 
     @Override
     public Book findBookByISBN(String ISBN) {
+        System.out.println(books);
         for (Book book : books) {
+
             if (Objects.equals(book.getISBN(), ISBN)) {
                 return book;
             }
