@@ -80,10 +80,14 @@ public class Publication {
 
     @Override
     public boolean equals(Object obj) {
+        if (this == obj) return true;
         if (obj.getClass() != this.getClass()) {
             return false;
         }
 
-        return this.toString().equals(obj.toString());
+        Publication publication = (Publication) obj;
+        return Arrays.equals(publication.authors, this.authors) && Objects.equals(publication.numOfCitations,
+                this.numOfCitations) && Objects.equals(publication.publishingYear, this.publishingYear) &&
+                Objects.equals(publication.title, this.title);
     }
 }
