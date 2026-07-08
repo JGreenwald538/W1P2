@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Publication {
-    private String title;
-    private String[] authors;
-    private int publishingYear;
-    private int numOfCitations;
+    protected String title;
+    protected String[] authors;
+    protected int publishingYear;
+    protected int numOfCitations;
 
     Publication(String title, String[] authors, int publishingYear, int numOfCitations) {
         this.title = title;

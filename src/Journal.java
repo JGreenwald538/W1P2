@@ -1,8 +1,8 @@
 package src;
 
 public class Journal extends Article{
-    private String publisher;
-    private String[] editors;
+    protected String publisher;
+    protected String[] editors;
 
     Journal(String title, String[] authors, int publishingYear, int numOfCitations, String publisher, String[] editors) {
         super(title, authors, publishingYear, numOfCitations);
