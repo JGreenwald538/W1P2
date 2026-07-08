@@ -1,5 +1,3 @@
-package src;
-
 public class Book extends Publication{
     private String publishingCompany;
     private int numOfPages;

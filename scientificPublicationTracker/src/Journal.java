@@ -1,5 +1,3 @@
-package src;
-
 public class Journal extends Article{
     protected String publisher;
     protected String[] editors;

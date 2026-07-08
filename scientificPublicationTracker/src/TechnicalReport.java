@@ -1,10 +1,8 @@
-package src;
-
-public class BlogPost extends Article{
+public class TechnicalReport extends Article{
     private String publicationVenue;
     private int numOfImpressions;
-    BlogPost(String title, String[] authors, int publishingYear, int numOfCitations, String publicationVenue,
-             int numOfImpressions) {
+    TechnicalReport(String title, String[] authors, int publishingYear, int numOfCitations, String publicationVenue,
+                    int numOfImpressions) {
         super(title, authors, publishingYear, numOfCitations);
         this.publicationVenue = publicationVenue;
         this.numOfImpressions = numOfImpressions;
@@ -34,7 +32,7 @@ public class BlogPost extends Article{
         }
         double impact = numOfCitations / 5.0;
 
-        impact += numOfImpressions / 2.0;
+        impact += numOfImpressions;
 
         return impact;
     }

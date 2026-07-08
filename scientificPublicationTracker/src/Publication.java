@@ -1,5 +1,3 @@
-package src;
-
 import java.time.Year;
 import java.util.Arrays;
 import java.util.Objects;

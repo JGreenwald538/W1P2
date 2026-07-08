@@ -1,6 +1,4 @@
-package src;
-
-public class ConferenceProceeding extends Article{
+public class ConferenceProceeding extends Article {
     private String confName;
     private String confLocation;
 
