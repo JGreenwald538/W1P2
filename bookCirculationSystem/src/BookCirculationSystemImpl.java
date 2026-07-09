@@ -15,7 +15,7 @@ public class BookCirculationSystemImpl implements BookCirculationSystem {
     }
 
     @Override
-    public Book popBook(Book book) {
+    public Book removeBook(Book book) {
         if (!books.contains(book)) {
             throw new BookNotFoundException("Book is not available in this system");
         }
@@ -41,7 +41,6 @@ public class BookCirculationSystemImpl implements BookCirculationSystem {
 
     @Override
     public Book findBookByISBN(String ISBN) {
-        System.out.println(books);
         for (Book book : books) {
 
             if (Objects.equals(book.getISBN(), ISBN)) {
